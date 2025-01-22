@@ -1,0 +1,117 @@
+// Header/_header.scss
+
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+    
+    width: 60%;
+    
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: .65rem;
+    padding-bottom: .65rem;
+
+    background-color: $background-color-main-lightmode;
+    font-family: $font-family-main;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    &__logo {
+        width: 2.15rem;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &-list {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            align-items: center;
+        }
+
+        &-item {
+            margin-left: 1rem;
+
+            &--link {
+                text-decoration: none;
+                color: $text-color-gray;
+                font-size: $font-size-normal;
+                justify-content: center;
+                align-items: center;
+                padding: 0.75rem 1rem;
+                transition: background-color 0.3s;
+                background-color: transparent;
+
+            }
+
+            &--link {
+
+                &:not(.header__nav-item--link-download):hover {
+                    background-color: $background-color-secondary-lightmode;
+                }
+                &:focus,
+                &:active {
+                    background-color: $background-color-secondary-lightmode;
+                }
+            }
+
+            &--svg {
+                color: $text-color-gray;
+                margin-left: 1rem;
+                cursor: pointer;
+
+            }
+            &--arrow{
+                transform: translateX(10px) translateY(-5px);
+                font-weight: $font-weight-bold;
+            }
+            &--language {}
+        }
+    }
+
+    .dropdown {
+        position: relative;
+
+        .dropdown-menu {
+            display: block;
+            position: absolute;
+            background-color: $background-color-main-lightmode;
+            color: $text-color-white;
+            transform: translateY(-10px);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 10;
+            transition: all 0.1s ease-in-out;
+            padding-top: 1.25rem;
+            &__item {
+                cursor: pointer;
+                padding: 1rem;
+
+                &:hover {
+                    background-color: $background-color-tertiary-lightmode;
+                }
+            }
+        }
+
+        &:hover .dropdown-menu {
+            transform: translateX(0px) translateY(5px);
+
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+
+
+}

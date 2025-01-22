@@ -1,0 +1,40 @@
+// styles/_variables.scss
+
+$font-size-base: 16px;
+$font-size-l: 1.15rem;
+$font-size-xl: 2rem;
+$font-size-xxl: 2.5rem;
+$font-size-xxxl: 3.8rem;
+$font-size-giant: 13rem;
+$font-size-normal: 1rem;
+
+$font-family-main : "Roboto", serif;
+$font-family-secondary : "Italiana", serif;
+
+$container-padding: 0.8rem 2.25%;
+$container-margin: 0.8rem 5%;
+
+
+// Colores elegantes
+$text-color-gray:#DEDEDE;
+$text-color-darkgray:#333333;
+$text-color-white: #FFFFFF; 
+$text-color-black:#000000;
+
+//Colores Principales Pagina
+$background-color-body:#F1F3F7;
+$background-color-main-lightmode: #27282A;
+$background-color-secondary-lightmode: #38414E;
+$background-color-tertiary-lightmode: #677487;
+
+$background-color-debian:#8F2D4E;
+// Variables Font Weight 
+$font-weight-thin: 100;       // Ultra delgado
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;    // Normal
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;      // Ultra ancho

@@ -1,0 +1,10 @@
+// styles.scss
+
+@import 'variables';
+@import 'reset'; 
+@import '../components/Header/header'; 
+@import '../components/Footer/footer'; 
+@import '../components/NewsCard/newscard'; 
+
+@import '../pages/Home/home'; 
+

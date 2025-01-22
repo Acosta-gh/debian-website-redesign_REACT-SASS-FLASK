@@ -1,0 +1,189 @@
+.home {
+    color: $text-color-darkgray;
+    padding-top: 6rem;
+    font-family: $font-family-main;
+
+    .home-content-intro {
+        margin: $container-margin;
+
+        padding: $container-padding;
+        display: flex;
+        flex-direction: column;
+
+        &__title,
+        &__subtitle,
+        &__caption,
+        &__buttons {
+            text-align: center;
+        }
+
+        &__title {
+            color: $background-color-debian;
+            font-size: $font-size-giant;
+            font-weight: $font-weight-black;
+            font-family: $font-family-secondary;
+
+            margin-bottom: 2rem;
+        }
+
+        &__subtitle {
+            font-size: $font-size-xxl;
+            font-weight: $font-weight-extra-light;
+        }
+
+        &__caption {
+            margin-top: 10px;
+            font-weight: $font-weight-light;
+            font-size: $font-size-xl;
+
+            margin-bottom: 2rem;
+        }
+
+        &__buttons {
+
+
+            .home-content-intro__button {
+
+                margin: 2rem;
+                background-color: $background-color-debian;
+                padding: 1rem;
+                color: $text-color-white;
+                text-decoration: none;
+                font-size: $font-size-l;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: darken($background-color-debian, 10%); // Oscurece el color en un 10%
+                }
+
+                &:last-child {
+                    background-color: $background-color-body;
+                    color: $background-color-main-lightmode;
+                    border: 0.15rem solid $background-color-debian;
+                    padding: 0.85rem;
+
+                    &:hover {
+                        background-color: $background-color-debian;
+                        color: $text-color-white;
+
+                    }
+                }
+
+                &-icon {
+
+                    margin-left: 10px;
+
+                    font-size: $font-size-l;
+                    transform: translateY(1px);
+                }
+            }
+
+            margin: 3rem 0 5rem 0;
+
+        }
+
+
+        &__image-element {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
+            /* Sombra sutil */
+            width: 70rem;
+            -webkit-filter: drop-shadow(1.5px 1.5px 1.5px #222);
+            filter: drop-shadow(1.5px 1.5px 1.5px #222);
+        }
+
+    }
+
+    .home-content-news {
+        background-color: #ffff;
+        padding: $container-padding;
+
+        &__logo {
+            display: flex;
+            justify-content: center;
+            margin: 2rem auto;
+            width: 10rem;
+        }
+
+        &__title {
+            text-align: center;
+            font-size: $font-size-xxl;
+            color: $text-color-darkgray;
+            font-weight: $font-weight-light;
+            margin-top: 1rem;
+        }
+
+        &__text {
+            text-align: center;
+            color: $text-color-darkgray;
+            font-weight: $font-weight-light;
+            margin: 1rem 15%;
+            line-height: 1.5;
+        }
+
+        &__cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .home-content-performance {
+        &__block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            &--second{
+                margin: 3rem 0 8rem 0;
+            }
+        }
+
+        &__text {
+            text-align: left;
+            font-size: $font-size-l;
+            font-weight: $font-weight-regular;
+            line-height: 1.5;
+            color: $text-color-darkgray;
+            margin: auto;
+            width: 30rem;
+
+            position: relative;
+            left: 17%;
+
+            &--second {
+                width: 100%;
+                margin:  auto;
+                left: auto;
+                right: 15%;
+                width: 40rem;
+
+            }
+
+            &--title {
+                font-weight: $font-weight-bold;
+                font-size: $font-size-xxxl;
+                margin-bottom: .5rem;
+                &--second {}
+            }
+
+
+
+        }
+
+        &__image-element {
+            filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+            width: 65rem;
+            position: relative;
+            right: 15%;
+
+            transform: rotate(-20deg);
+            &--second {
+                width: 40rem;
+                transform: rotate(0deg);
+                left: 30%;
+            }
+        }
+    }
+}
