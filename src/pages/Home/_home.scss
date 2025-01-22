@@ -186,4 +186,37 @@
             }
         }
     }
+
+    .home-content-foss{
+        background-color: #ffff;
+        padding: $container-padding;
+        text-align: center;
+        color: $text-color-darkgray;
+
+        &__intro{
+            margin: 0 25%;
+        }
+
+        &__title{
+            font-weight: $font-weight-bold;
+            font-size: $font-size-xxxl;
+            margin: 3rem 0 1rem 0;
+        }
+
+        &__description{
+            font-size: $font-size-l;
+            font-weight: $font-weight-light;
+            margin: 2rem auto;
+            width: 70%;
+        }
+
+        &__link{
+            color: $text-color-anchor;
+            margin: 1rem 0 2rem 0;
+        }
+
+        &__features{
+            margin-top: 5rem;
+        }
+    }
 }

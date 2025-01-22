@@ -96,11 +96,37 @@ const Home = () => {
           <img src={mockup__performance} alt="Computer Mockup" className="home-content-performance__image-element" />
         </div>
         <div className='home-content-performance__block home-content-performance__block--second'>
-        <img src={mockup__performance_old} alt="Computer Mockup" className="home-content-performance__image-element home-content-performance__image-element--second" />
+          <img src={mockup__performance_old} alt="Computer Mockup" className="home-content-performance__image-element home-content-performance__image-element--second" />
 
           <div className='home-content-performance__text home-content-performance__text--second'><h3 className='home-content-performance__text--title home-content-performance__text--title--second'> Revive your old PC. Help the planet. </h3> <p>We've streamlined Debian to work on computers as old as 15 years. Keep using your PC for longer to save money on upgrades and reduce e-waste to save the environment.</p></div>
         </div>
       </section>
+      <section className='home-content-foss'>
+        <div className='home-content-foss__intro'>
+          <h3 className='home-content-foss__title'>Everything We Do is Open Source</h3>
+          <p className='home-content-foss__description'>
+            Our platform itself is entirely open source, and it’s built upon a strong foundation of Free & Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.
+          </p>
+          <a className='home-content-foss__link' href='#'> Explore Our Stack </a>
+        </div>
+        <div className='home-content-foss__features'>
+          <div className='home-content-foss__feature'>
+            <h4 className='home-content-foss__feature-title'>Secure & Privacy-respecting</h4>
+            <p className='home-content-foss__feature-description'>
+              When source code is available to audit, anyone—a security researcher, a concerned user, or an OEM shipping the OS on their hardware—can verify that the software is secure and not collecting or leaking personal information.
+            </p>
+            <a className='home-content-foss__feature-link' href='#'>Security Notices</a>
+          </div>
+          <div className='home-content-foss__feature'>
+            <h4 className='home-content-foss__feature-title'>Built for Developers</h4>
+            <p className='home-content-foss__feature-description'>
+              Whether your app could benefit from a new system feature or API or you’re curious as to how an existing feature or design pattern was built, you have complete access to our source code. Copy it, learn from it, remix it, modify it, and redistribute it.
+            </p>
+            <a className='home-content-foss__feature-link' href='#'>Get Involved</a>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
