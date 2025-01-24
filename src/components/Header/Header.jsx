@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from "../../assets/images/debian-logo.png";
 
 function Header() {
@@ -9,6 +9,27 @@ function Header() {
     setIsDarkMode(prevMode => !prevMode);
 
   };*/}
+
+  const [isDropDownOpen, setIsDropDownOpen] = useState(false);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (event.target.closest('.dropdown') === null) {
+        setDropDownOpen(false); 
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
+  const toggleLanguageDropdown = () => {
+    setDropDownOpen(prevState => !prevState);
+  };
+
   return (
     <header className="header">
       {/* Logo */}
@@ -48,7 +69,7 @@ function Header() {
           </li>
           {/* Menú de idioma */}
           <li className="header__nav-item header__nav-item--language">
-              <p className="header__nav-item--link header__nav-item--language-text">LENGUAGE</p>
+            <p className="header__nav-item--link header__nav-item--language-text" onClick={toggleLanguageDropdown}>LENGUAGE</p>
             <div className="dropdown">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16" className="header__nav-item--svg header__nav-item--arrow">
                 <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
