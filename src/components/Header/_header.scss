@@ -1,16 +1,14 @@
 // Header/_header.scss
 
 .header {
-
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
+
 
     z-index: 1;
 
-    
     width: 60%;
-    
+
     padding-left: 20%;
     padding-right: 20%;
     padding-top: .65rem;
@@ -23,9 +21,21 @@
     flex-direction: row;
     justify-content: space-between;
 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+
+    @include respond-to($breakpoint-sm) {
+        width: auto;
+        padding: 0;
+        flex-direction: column;
+    }
+
     &__logo {
         width: 2.15rem;
+
+        @include respond-to($breakpoint-sm) {
+            margin: .5rem;
+        }
     }
 
     &__nav {
@@ -38,10 +48,30 @@
             justify-content: center;
             margin: auto;
             align-items: center;
+
+            @include respond-to($breakpoint-sm) {
+                flex-direction: column;
+                width: 100%;
+
+
+                //height: 0px;
+                //padding: 0;
+
+            }
         }
 
         &-item {
             margin-left: 1rem;
+
+            @include respond-to($breakpoint-sm) {
+                margin-top: 1rem;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 1rem;
+                padding: .5rem;
+                text-align: left;
+                border-bottom: .5px solid rgba(177, 177, 177, 0.192);
+            }
 
             &--link {
                 text-decoration: none;
@@ -53,6 +83,11 @@
                 transition: background-color 0.3s;
                 background-color: transparent;
 
+                @include respond-to($breakpoint-sm) {
+                    padding: 0rem;
+                    width: 100%;
+
+                }
             }
 
             &--link {
@@ -60,9 +95,14 @@
                 &:not(.header__nav-item--link-download):hover {
                     background-color: $background-color-secondary-lightmode;
                 }
+
                 &:focus,
                 &:active {
                     background-color: $background-color-secondary-lightmode;
+
+                    @include respond-to($breakpoint-sm) {
+                        background-color: rgba(255, 0, 0, 0);
+                    }
                 }
             }
 
@@ -71,12 +111,28 @@
                 margin-left: 1rem;
                 cursor: pointer;
 
+                @include respond-to($breakpoint-sm) {
+
+                    display: none;
+                }
+
             }
-            &--arrow{
+
+            &--arrow {
                 transform: translateX(10px) translateY(-5px);
                 font-weight: $font-weight-bold;
             }
-            &--language {}
+
+            &--language {
+                &-text {
+                    display: none;
+
+                    @include respond-to($breakpoint-sm) {
+                        display: block;
+                        margin-bottom: .8rem;                        
+                    }
+                }
+            }
         }
     }
 
@@ -94,13 +150,32 @@
             z-index: 10;
             transition: all 0.1s ease-in-out;
             padding-top: 1.25rem;
+
+
+
             &__item {
                 cursor: pointer;
                 padding: 1rem;
 
+                @include respond-to($breakpoint-sm) {}
+
                 &:hover {
                     background-color: $background-color-tertiary-lightmode;
                 }
+            }
+
+            @include respond-to($breakpoint-sm) {
+                transform: translateY(0px) translateX(-12px);
+                position: relative;
+                background-color: darken($background-color-main-lightmode, 3%);
+                padding: .5rem;
+                width: 100%;
+                opacity: 1;
+                visibility: visible;
+                margin: 0;
+                padding: 0;
+                text-align: left;
+
             }
         }
 
@@ -110,6 +185,8 @@
             opacity: 1;
             visibility: visible;
         }
+
+
     }
 
 
