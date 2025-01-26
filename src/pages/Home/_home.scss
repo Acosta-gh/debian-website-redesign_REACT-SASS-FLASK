@@ -3,6 +3,10 @@
     padding-top: 2.7rem;
     font-family: $font-family-main;
 
+    @include respond-to($breakpoint-sm) {
+        padding-top: 1.3rem;
+    }
+
     .home-content-intro {
         margin: $container-margin;
 
@@ -24,11 +28,19 @@
             font-family: $font-family-secondary;
 
             margin-bottom: 2rem;
+
+            @include respond-to($breakpoint-sm) {
+                font-size: 7rem;
+            }
         }
 
         &__subtitle {
             font-size: $font-size-xxl;
             font-weight: $font-weight-extra-light;
+
+            @include respond-to($breakpoint-sm) {
+                font-size: 2rem;
+            }
         }
 
         &__caption {
@@ -37,10 +49,24 @@
             font-size: $font-size-xl;
 
             margin-bottom: 2rem;
+
+            @include respond-to($breakpoint-sm) {
+                font-size: 1.8rem;
+                height: 3rem; // Evita movimiento de camara.
+            }
         }
 
         &__buttons {
 
+
+            @include respond-to($breakpoint-sm) {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: center;
+               position: relative;
+               margin-top: 1rem;
+               margin-bottom: 3rem;
+            }
 
             .home-content-intro__button {
 
@@ -51,6 +77,12 @@
                 text-decoration: none;
                 font-size: $font-size-l;
                 transition: background-color 0.3s ease;
+
+                @include respond-to($breakpoint-sm) {
+                    margin: 5px;
+                    width: 50%;
+                    font-size: 1rem;
+                }
 
                 &:hover {
                     background-color: darken($background-color-debian, 10%); // Oscurece el color en un 10%
@@ -76,6 +108,8 @@
                     font-size: $font-size-l;
                     transform: translateY(1px);
                 }
+
+
             }
 
             margin: 3rem 0 5rem 0;
