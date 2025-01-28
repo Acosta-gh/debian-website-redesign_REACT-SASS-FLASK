@@ -64,24 +64,22 @@ const Home = () => {
               showCursor={true}
             />
           </h4>
-          <div className="home-content-intro__buttons">
-            <Link to="/" className="home-content-intro__button">
-
-              Try Debian Live
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16" className='home-content-intro__button-icon'>
-                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
-                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
-              </svg>
-            </Link>
-            <Link to="/" className="home-content-intro__button">
-              Learn More
-            </Link>
+          <div className='home-content-intro__special-feature-mobile'>
+            <div className="home-content-intro__buttons">
+              <Link to="/" className="home-content-intro__button">
+                Try Debian Live
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16" className='home-content-intro__button-icon'>
+                  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+                </svg>
+              </Link>
+              <Link to="/" className="home-content-intro__button">
+                Learn More
+              </Link>
+            </div>
+            <img src={mockup__intro} alt="Computer Mockup" className="home-content-intro__image-element" />
           </div>
-
-          <img src={mockup__intro} alt="Computer Mockup" className="home-content-intro__image-element" />
         </Fade>
-
-
       </section>
       <section className='home-content-news'>
         <img src={debiansvg__logo} alt="Debian Logo" className="home-content-news__logo" />
@@ -181,23 +179,23 @@ const Home = () => {
 
           <h3 className='home-content-faq__title'>Frequently asked questions.</h3>
           <div className='home-content-faq__questions'>
-    <p className='home-content-faq__text'>
-        <span className='home-content-faq__text home-content-faq__text--question'>Is it free?: </span>
-        Yes, Debian is completely free of charge. Almost everything in Debian is also open-source.
-    </p>
-    <p className='home-content-faq__text'>
-        <span className='home-content-faq__text home-content-faq__text--question'>Will it work on my computer?: </span>
-        Yes, Debian works on most computers. It can also be run from a live USB stick to make sure everything works fine without having to install anything.
-    </p>
-    <p className='home-content-faq__text'>
-        <span className='home-content-faq__text home-content-faq__text--question'>Can I keep Windows?: </span>
-        Yes, you can have both Windows and Debian. A menu asks you which one to use when you start the computer.
-    </p>
-    <p className='home-content-faq__text'>
-        <span className='home-content-faq__text home-content-faq__text--question'>Will it suit my needs?: </span>
-        Hopefully. Debian comes with what most people need out of the box as well as easy access to more than 60,000 software packages and 7,800 games.
-    </p>
-</div>
+            <p className='home-content-faq__text'>
+              <span className='home-content-faq__text home-content-faq__text--question'>Is it free?: </span>
+              Yes, Debian is completely free of charge. Almost everything in Debian is also open-source.
+            </p>
+            <p className='home-content-faq__text'>
+              <span className='home-content-faq__text home-content-faq__text--question'>Will it work on my computer?: </span>
+              Yes, Debian works on most computers. It can also be run from a live USB stick to make sure everything works fine without having to install anything.
+            </p>
+            <p className='home-content-faq__text'>
+              <span className='home-content-faq__text home-content-faq__text--question'>Can I keep Windows?: </span>
+              Yes, you can have both Windows and Debian. A menu asks you which one to use when you start the computer.
+            </p>
+            <p className='home-content-faq__text'>
+              <span className='home-content-faq__text home-content-faq__text--question'>Will it suit my needs?: </span>
+              Hopefully. Debian comes with what most people need out of the box as well as easy access to more than 60,000 software packages and 7,800 games.
+            </p>
+          </div>
 
         </Fade>
       </section>
