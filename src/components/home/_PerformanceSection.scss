@@ -1,0 +1,114 @@
+.home-content-performance {
+    overflow: hidden;
+
+    margin: $container-margin;
+    &__block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @include respond-to($breakpoint-lg) {
+            display: flex;
+            flex-direction: column;
+         
+            margin-top: 3.5rem;
+
+        }
+
+        &--second {
+
+            @include respond-to($breakpoint-lg) {
+                margin-bottom: 3.5rem
+            }
+
+        }
+    }
+
+    &__text {
+
+        text-align: left;
+        font-size: $font-size-l;
+        font-weight: $font-weight-regular;
+        line-height: 1.5;
+        color: $text-color-darkgray;
+        margin: auto;
+        width: 30rem;
+
+        position: relative;
+        left: 17%;
+
+
+        @include respond-to($breakpoint-lg) {
+            font-size: $font-size-l-mobile;
+            width: 100%;
+            left: 0px;
+            margin: 0;
+            padding: 0;
+        }
+
+        &--second {
+            width: 100%;
+            margin: auto;
+            left: auto;
+            right: 15%;
+            width: 40rem;
+
+            @include respond-to($breakpoint-lg) {
+                font-size: $font-size-l-mobile;
+                width: 100%;
+                left: 0px;
+                margin: 0;
+                padding: 0rem;
+                width: 100%;
+            }
+        }
+
+        &--title {
+            font-weight: $font-weight-bold;
+            font-size: $font-size-xxxl;
+            margin-bottom: .5rem;
+
+            @include respond-to($breakpoint-lg) {
+                font-size: $font-size-xxxl-mobile;
+
+            }
+
+            &--second {
+                @include respond-to($breakpoint-lg) {
+                    font-size: $font-size-xxxl-mobile;
+                }
+            }
+
+            &-icon {
+                transform: scale(4) translateX(.6rem) translateY(-.3rem);
+            }
+        }
+
+    }
+
+    &__image-element {
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+        width: 65rem;
+        position: relative;
+        right: 15%;
+        transform: rotate(-20deg);
+
+        @include respond-to($breakpoint-lg) {
+
+            width: calc(100% + 2rem);
+            left: -10%;
+        }
+
+        &--second {
+            width: 40rem;
+            transform: rotate(0deg);
+            left: 15%;
+
+            @include respond-to($breakpoint-lg) {
+
+                width: 55%;
+                left: 0px;
+
+            }
+        }
+    }
+}

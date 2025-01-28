@@ -1,0 +1,53 @@
+.home-content-news {
+    background-color: #ffff;
+    padding: $container-padding;
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        margin: 2rem auto;
+        width: 10rem;
+
+        @include respond-to($breakpoint-lg) {
+            width: calc(30% + 0rem);
+
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: $font-size-xxl;
+        color: $text-color-darkgray;
+        font-weight: $font-weight-light;
+        margin-top: 1rem;
+    }
+
+    &__text {
+        text-align: center;
+        color: $text-color-darkgray;
+        font-weight: $font-weight-light;
+        margin: 1rem 15%;
+        line-height: 1.5;
+
+        @include respond-to($breakpoint-lg) {
+
+            margin: 1rem .5rem;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @include respond-to($breakpoint-lg) {
+            /* 
+            display: flex; 
+            overflow-x: auto; 
+            white-space: nowrap; 
+            padding: 1rem;
+            */
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+    }
+}

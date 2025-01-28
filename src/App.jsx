@@ -1,15 +1,15 @@
-// Importación de las herramientas necesarias para el enrutamiento con React Router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home/Home";       
-import NoPage from "./pages/NoPage";  
+
 import Layout from "./components/Layout";  
 
+import NoPage from "./pages/no-page/NoPage";  
+import Home from "./pages/home/Home";       
 import Blog from "./pages/Blog";  
 import Micronews from "./pages/Micronews";  
 import Planet from "./pages/Planet";  
 
-import './styles/styles.scss';
+import './styles/Styles.scss';
 
 function App() {
   return (

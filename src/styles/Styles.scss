@@ -1,0 +1,18 @@
+// styles/ Styles.scss
+
+@import 'Variables';
+@import 'Reset'; 
+
+@import '../components/shared/Header'; 
+@import '../components/shared/Footer'; 
+@import '../components/shared/Newscard'; 
+
+@import '../components/home/FaqSection'; 
+@import '../components/home/FossSection'; 
+@import '../components/home/IntroSection'; 
+@import '../components/home/NewsSection'; 
+@import '../components/home/PerformanceSection'; 
+@import '../components/home/SponsorSection'; 
+
+@import '../pages/home/Home'; 
+@import '../pages/no-page/NoPage'; 

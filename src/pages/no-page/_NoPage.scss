@@ -1,0 +1,29 @@
+.no-page {
+    text-align: center;
+    padding: 5rem;
+    background-color: $background-color-body;
+    color: $text-color-darkgray;
+  
+    min-height: 100vh;
+    h1 {
+      font-size: $font-size-xxl;
+      font-weight: $font-weight-bold;
+      color: $background-color-debian;
+    }
+  
+    p {
+      font-size: $font-size-l;
+      color: $text-color-darkgray;
+    }
+  
+    @include respond-to($breakpoint-sm) {
+      padding: 2rem;
+      h1 {
+        font-size: $font-size-xl;
+      }
+      p {
+        font-size: $font-size-base;
+      }
+    }
+  }
+  

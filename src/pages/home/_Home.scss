@@ -1,0 +1,9 @@
+.home {
+    color: $text-color-darkgray;
+    padding-top: 2.7rem;
+    font-family: $font-family-main;
+
+    @include respond-to($breakpoint-lg) {
+        padding-top: 1.3rem;
+    }
+}
