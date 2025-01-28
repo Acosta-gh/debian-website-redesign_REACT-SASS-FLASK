@@ -1,7 +1,6 @@
 import React from 'react'
 import { Fade } from "react-awesome-reveal";
 
-// Images import
 import sponsorI from "../../assets/images/sponsors/1und1.png";
 import sponsorII from "../../assets/images/sponsors/ampere.jpg";
 import sponsorIII from "../../assets/images/sponsors/bytemark_logo.svg";

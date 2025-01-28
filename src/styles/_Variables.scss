@@ -1,5 +1,6 @@
 // styles/_Variables.scss
 
+// Tamaños de fuente 
 $font-size-base: 16px;
 $font-size-l: 1.15rem;
 $font-size-xl: 2rem;
@@ -8,7 +9,7 @@ $font-size-xxxl: 3.8rem;
 $font-size-giant: 13rem;
 $font-size-normal: 1rem;
 
-// Tamaños de fuente para mobile
+// Tamaños de fuente para celular
 $font-size-base-mobile: 14px; // Ajustado de 16px
 $font-size-l-mobile: 1rem; // Ajustado de 1.15rem
 $font-size-xl-mobile: 1.5rem; // Ajustado de 2rem
@@ -17,48 +18,52 @@ $font-size-xxxl-mobile: 3rem; // Ajustado de 3.8rem
 $font-size-giant-mobile: 8rem; // Ajustado de 13rem
 $font-size-normal-mobile: 0.9rem; // Ajustado de 1rem
 
+
+// Fuentes de texto 
 $font-family-main : "Roboto",
 serif;
 $font-family-secondary : "Italiana",
 serif;
 
+
+// Variables padding y margin
 $container-padding: 0.8rem 2.25%;
 $container-margin: 0.8rem 5%;
 
 
-// Colores elegantes
+// Colores 
 $text-color-gray: #DEDEDE;
 $text-color-darkgray: #333333;
 $text-color-white: #FFFFFF;
 $text-color-black: #000000;
 $text-color-anchor: #0088CC;
 
-//Colores Principales Pagina
+// Colores background 
 $background-color-body: #F1F3F7;
 $background-color-main-lightmode: #27282A;
 $background-color-secondary-lightmode: #38414E;
 $background-color-tertiary-lightmode: #677487;
-
 $background-color-debian: #8F2D4E;
+
 // Variables Font Weight 
-$font-weight-thin: 100; // Ultra delgado
+$font-weight-thin: 100; 
 $font-weight-extra-light: 200;
 $font-weight-light: 300;
-$font-weight-regular: 400; // Normal
+$font-weight-regular: 400; 
 $font-weight-medium: 500;
 $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 $font-weight-extra-bold: 800;
-$font-weight-black: 900; // Ultra ancho
+$font-weight-black: 900; 
 
 
-// variables para breakpoints
-$breakpoint-xs: 0px; // 
-$breakpoint-sm: 576px; //
-$breakpoint-md: 768px; //
-$breakpoint-lg: 992px; // 
-$breakpoint-xl: 1200px; //  
-$breakpoint-xxl: 1400px; // 
+// Variables para breakpoints
+$breakpoint-xs: 0px; 
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px; 
+$breakpoint-lg: 992px; 
+$breakpoint-xl: 1200px;  
+$breakpoint-xxl: 1400px; 
 
 // Mixin para media queries
 @mixin respond-to($breakpoint) {
