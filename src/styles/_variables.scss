@@ -53,12 +53,12 @@ $font-weight-black: 900; // Ultra ancho
 
 
 // variables para breakpoints
-$breakpoint-xs: 0px; // (teléfonos, menos de 576px)
-$breakpoint-sm: 576px; // (tabletas, 576px y más)
-$breakpoint-md: 768px; // (escritorios, 768px y más)
-$breakpoint-lg: 992px; // (escritorios grandes, 992px y más)
-$breakpoint-xl: 1200px; //  (escritorios más grandes, 1200px y más)
-$breakpoint-xxl: 1400px; //  (escritorios aún más grandes, 1400px y más)
+$breakpoint-xs: 0px; // 
+$breakpoint-sm: 576px; //
+$breakpoint-md: 768px; //
+$breakpoint-lg: 992px; // 
+$breakpoint-xl: 1200px; //  
+$breakpoint-xxl: 1400px; // 
 
 // Mixin para media queries
 @mixin respond-to($breakpoint) {
