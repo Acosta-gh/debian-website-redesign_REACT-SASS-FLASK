@@ -1,12 +1,18 @@
-import React from 'react'
+  import React from 'react'
 
-const NoPage = () => {
-  return (
-    <div className="no-page">
-      <h1>404 - Page Not Found</h1>
-      <p>Sorry, the page you are looking for does not exist.</p>
-    </div>
-  );
-}
+  import { translations } from "../../i18n/Translations";
+  import { useLanguage } from "../../contexts/LanguageContext";
 
-export default NoPage
+
+  const NoPage = () => {
+    const { language } = useLanguage();
+
+    return (
+      <div className="no-page">
+        <h1>{translations.noPage.notFound[language]}</h1>
+        <p>{translations.noPage.sorryMessage[language]}</p>
+      </div>
+    );
+  }
+
+  export default NoPage

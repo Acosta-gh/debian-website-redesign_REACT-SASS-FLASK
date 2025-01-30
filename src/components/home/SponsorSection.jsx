@@ -1,56 +1,48 @@
-import React from 'react'
+import React from 'react';
 import { Fade } from "react-awesome-reveal";
 
-import sponsorI from "../../assets/images/sponsors/1und1.png";
-import sponsorII from "../../assets/images/sponsors/ampere.jpg";
-import sponsorIII from "../../assets/images/sponsors/bytemark_logo.svg";
-import sponsorIV from "../../assets/images/sponsors/conova.png";
-import sponsorV from "../../assets/images/sponsors/credativ.png";
-import sponsorVI from "../../assets/images/sponsors/fastly.png";
-import sponsorVII from "../../assets/images/sponsors/freexian.svg";
-import sponsorVIII from "../../assets/images/sponsors/gandi.svg";
-import sponsorIX from "../../assets/images/sponsors/google.svg";
-import sponsorX from "../../assets/images/sponsors/hetzner-logo.svg";
-import sponsorXI from "../../assets/images/sponsors/hpe.png";
-import sponsorXII from "../../assets/images/sponsors/logo_leaseweb.png";
-import sponsorXIII from "../../assets/images/sponsors/loongson.png";
-import sponsorXIV from "../../assets/images/sponsors/manda_logo.png";
-import sponsorXV from "../../assets/images/sponsors/osuosl.png";
-import sponsorXVI from "../../assets/images/sponsors/rcodezerodns.png";
-import sponsorXVII from "../../assets/images/sponsors/ubc.png";
-import sponsorXVIII from "../../assets/images/sponsors/wellcome_sanger.png";
+import { translations } from "../../i18n/Translations";
+import { useLanguage } from "../../contexts/LanguageContext";
+
+const sponsors = [
+    { src: "/images/1und1.png", alt: "1und1" },
+    { src: "/images/ampere.jpg", alt: "Ampere" },
+    { src: "/images/bytemark_logo.svg", alt: "Bytemark" },
+    { src: "/images/conova.png", alt: "Conova" },
+    { src: "/images/credativ.png", alt: "Credativ" },
+    { src: "/images/fastly.png", alt: "Fastly" },
+    { src: "/images/freexian.svg", alt: "Freexian" },
+    { src: "/images/gandi.svg", alt: "Gandi" },
+    { src: "/images/google.svg", alt: "Google" },
+    { src: "/images/hetzner-logo.svg", alt: "Hetzner" },
+    { src: "/images/hpe.png", alt: "HPE" },
+    { src: "/images/logo_leaseweb.png", alt: "Leaseweb" },
+    { src: "/images/loongson.png", alt: "Loongson" },
+    { src: "/images/manda_logo.png", alt: "Manda" },
+    { src: "/images/osuosl.png", alt: "OSUOSL" },
+    { src: "/images/rcodezerodns.png", alt: "RcodeZeroDNS" },
+    { src: "/images/ubc.png", alt: "UBC" },
+    { src: "/images/wellcome_sanger.png", alt: "Wellcome Sanger" },
+];
 
 const SponsorSection = () => {
+    const { language } = useLanguage();
+
     return (
         <section className='home-content-sponsors'>
-            <Fade triggerOnce duration="500" >
-
-                <h3 className='home-content-sponsors__title'>Debian Partners</h3>
-                <p className='home-content-sponsors__text'>The Partners Program was created to recognize companies and organizations that provide ongoing assistance to Debian. Because of the substantial support provided by these partners, we have been able to expand and improve Debian. We would like to officially recognize their efforts, and continue to maintain a good working relationship.</p>
-
+            <Fade triggerOnce duration="500">
+                <h3 className='home-content-sponsors__title'>{translations.sponsorSection.title[language]}</h3>
+                <p className='home-content-sponsors__text'>
+                    {translations.sponsorSection.text[language]}
+                </p>
                 <div className='home-content-sponsors__images'>
-                    <img src={sponsorI} alt="1und1" />
-                    <img src={sponsorII} alt="Ampere" />
-                    <img src={sponsorIII} alt="Bytemark" />
-                    <img src={sponsorIV} alt="Conova" />
-                    <img src={sponsorV} alt="Credativ" />
-                    <img src={sponsorVI} alt="Fastly" />
-                    <img src={sponsorVII} alt="Freexian" />
-                    <img src={sponsorVIII} alt="Gandi" />
-                    <img src={sponsorIX} alt="Google" />
-                    <img src={sponsorX} alt="Hetzner" />
-                    <img src={sponsorXI} alt="HPE" />
-                    <img src={sponsorXII} alt="Leaseweb" />
-                    <img src={sponsorXIII} alt="Loongson" />
-                    <img src={sponsorXIV} alt="Manda" />
-                    <img src={sponsorXV} alt="OSUOSL" />
-                    <img src={sponsorXVI} alt="RcodeZeroDNS" />
-                    <img src={sponsorXVII} alt="UBC" />
-                    <img src={sponsorXVIII} alt="Wellcome Sanger" />
+                    {sponsors.map((s, index) => (
+                        <img key={index} src={s.src} alt={s.alt} />
+                    ))}
                 </div>
             </Fade>
         </section>
-    )
-}
+    );
+};
 
-export default SponsorSection
+export default SponsorSection;

@@ -1,9 +1,15 @@
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import React, { useEffect, useState } from 'react';
 import logo from "../../assets/images/debian-logo.png";
 import { Squeeze as Hamburger } from 'hamburger-react';
 
+import { useLanguage } from '../../contexts/LanguageContext'; //Importa el Contexto
+import { translations } from '../../i18n/Translations'; // Importa las traducciones
+
 function Header() {
+  const { language, toggleLanguage } = useLanguage(); //Obtiene el idioma elegido
+  console.log(language); 
+
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const [isHamburguerMenuOpen, setIsHamburguerMenuOpen] = useState(false);
   const [isOpen, setOpen] = useState(false);
@@ -32,6 +38,11 @@ function Header() {
     setIsHamburguerMenuOpen((prev) => !prev);
   };
 
+  const handleLanguageChange = (lang) => {
+    toggleLanguage(lang);
+    setIsDropDownOpen(false);
+  };
+
   return (
     <header className="header">
       {/* Logo */}
@@ -40,30 +51,29 @@ function Header() {
           <img src={logo} alt="Logo de la página" className="header__logo" />
         </Link>
       </h1>
+
       {/* Menú de navegación */}
       <nav className="header__nav">
-        <ul
-          className={`header__nav-list ${isHamburguerMenuOpen ? 'header__nav-list-hamburguer_icon--active' : ''}`}
-        >
+        <ul className={`header__nav-list ${isHamburguerMenuOpen ? 'header__nav-list-hamburguer_icon--active' : ''}`}>
           <div className="header__nav-hamburguer_icon" onClick={toggleHamburguerMenu}>
             <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>
 
           {/* Links */}
-          <li className="header__nav-item">
-            <Link to="/" className="header__nav-item--link">HOME</Link>
+            <li className="header__nav-item">
+            <Link to="/" className="header__nav-item--link">{translations.header.home[language]}</Link>
           </li>
           <li className="header__nav-item">
-            <Link to="/blog" className="header__nav-item--link">GET DEBIAN</Link>
+            <Link to="/blog" className="header__nav-item--link">{translations.header.getDebian[language]}</Link>
           </li>
           <li className="header__nav-item">
-            <Link to="/micronews" className="header__nav-item--link">ABOUT US</Link>
+            <Link to="/micronews" className="header__nav-item--link">{translations.header.aboutUs[language]}</Link>
           </li>
           <li className="header__nav-item">
-            <Link to="/planet" className="header__nav-item--link">EVENTS</Link>
+            <Link to="/planet" className="header__nav-item--link">{translations.header.events[language]}</Link>
           </li>
           <li className="header__nav-item">
-            <Link to="/planet" className="header__nav-item--link">DONATE</Link>
+            <Link to="/planet" className="header__nav-item--link">{translations.header.donate[language]}</Link>
           </li>
 
           {/* Menú de idioma */}
@@ -72,7 +82,7 @@ function Header() {
               className="header__nav-item--link header__nav-item--language-text dropdown"
               onClick={toggleLanguageDropdown}
             >
-              LENGUAGE
+              {language} {/* Muestra el idioma seleccionado */}
               {isDropDownOpen ? (
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-dash-circle" viewBox="0 0 16 16">
                   <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
@@ -95,12 +105,12 @@ function Header() {
                 <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
               </svg>
               <ul className={`dropdown-menu ${isDropDownOpen ? 'dropdown-menu--active' : ''}`}>
-                <li className="dropdown-menu__item">Español</li>
-                <li className="dropdown-menu__item">English</li>
-                <li className="dropdown-menu__item">Français</li>
-                <li className="dropdown-menu__item">Português</li>
-                <li className="dropdown-menu__item">简体中文</li>
-                <li className="dropdown-menu__item">繁體中文</li>
+                <li className="dropdown-menu__item" onClick={() => handleLanguageChange("es")}>Español</li>
+                <li className="dropdown-menu__item" onClick={() => handleLanguageChange("en")}>English</li>
+                <li className="dropdown-menu__item" onClick={() => handleLanguageChange("fr")}>Français</li>
+                <li className="dropdown-menu__item" onClick={() => handleLanguageChange("pt")}>Português</li>
+                <li className="dropdown-menu__item" onClick={() => handleLanguageChange("zh-Hans")}>简体中文</li>
+                <li className="dropdown-menu__item" onClick={() => handleLanguageChange("zh-Hant")}>繁體中文</li>
               </ul>
             </div>
           </li>
