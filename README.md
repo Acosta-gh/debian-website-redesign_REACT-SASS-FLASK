@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ad6a93fb-b928-423f-9d36-c22ac7e93c52)# Pagina Debian Re-Imaginada (En desarrollo)
+# Pagina Debian Re-Imaginada (En desarrollo)
 
 Este proyecto es una re-imaginación de la página web de Debian, con un diseño más moderno y dinámico. 
 
