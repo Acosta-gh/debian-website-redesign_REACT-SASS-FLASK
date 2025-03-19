@@ -64,16 +64,16 @@ function Header() {
             <Link to="/" className="header__nav-item--link">{translations.header.home[language]}</Link>
           </li>
           <li className="header__nav-item">
-            <Link to="/blog" className="header__nav-item--link">{translations.header.getDebian[language]}</Link>
+            <Link to="https://www.debian.org/distrib/" className="header__nav-item--link">{translations.header.getDebian[language]}</Link>
           </li>
           <li className="header__nav-item">
-            <Link to="/micronews" className="header__nav-item--link">{translations.header.aboutUs[language]}</Link>
+            <Link to="https://micronews.debian.org/" className="header__nav-item--link">{translations.header.aboutUs[language]}</Link>
           </li>
           <li className="header__nav-item">
-            <Link to="/planet" className="header__nav-item--link">{translations.header.events[language]}</Link>
+            <Link to="https://www.debian.org/News/" className="header__nav-item--link">{translations.header.events[language]}</Link>
           </li>
           <li className="header__nav-item">
-            <Link to="/planet" className="header__nav-item--link">{translations.header.donate[language]}</Link>
+            <Link to="https://www.debian.org/devel/join/" className="header__nav-item--link">{translations.header.donate[language]}</Link>
           </li>
 
           {/* Menú de idioma */}

@@ -31,9 +31,9 @@ const SponsorSection = () => {
     return (
         <section className='home-content-sponsors'>
             <Fade triggerOnce duration="500">
-                <h3 className='home-content-sponsors__title'>{translations.sponsorSection.title[language]}</h3>
+                <h3 className='home-content-sponsors__title'>{translations.homePage.sponsorSection.title[language]}</h3>
                 <p className='home-content-sponsors__text'>
-                    {translations.sponsorSection.text[language]}
+                    {translations.homePage.sponsorSection.text[language]}
                 </p>
                 <div className='home-content-sponsors__images'>
                     {sponsors.map((s, index) => (

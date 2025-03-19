@@ -1,0 +1,141 @@
+.learn-more {
+    background-color: $background-color-body;
+
+    &__intro-blankspace {
+        background-color: $background-color-debian;
+        height: 18rem;
+
+        .learn-more__title {
+            font-size: $font-size-xxxl;
+            display: flex;
+            justify-content: center;
+            padding-top: 7rem;
+            color: $text-color-white;
+
+            @include respond-to($breakpoint-lg) {
+                font-size: $font-size-xxxl-mobile;
+                text-align: center;
+                padding: 3.3rem 1rem 0 1rem;
+            }
+        }
+
+        .learn-more__description {
+            margin: 0 auto;
+            width: 50%;
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: $text-color-white;
+            font-size: $font-size-xl;
+            font-family: $font-family-main;
+            font-weight: $font-weight-light;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            height: 10rem;
+            text-align: center;
+
+            @include respond-to($breakpoint-lg) {
+                font-size: $font-size-xl-mobile;
+                text-align: center;
+                margin: 1rem auto;
+                width: 90%;
+            }
+        }
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+        bottom: 15rem;
+        max-width: 100%;
+
+        @include respond-to($breakpoint-lg) {
+            bottom: 12rem;
+        }
+    }
+
+    &__wave {
+        height: 32vh;
+        background-color: #8f2d4e;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 105px;
+            position: absolute;
+            bottom: -0.3%;
+            left: 0;
+            background-size: auto;
+            background-repeat: repeat no-repeat;
+            background-position: 20vw bottom;
+            background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23f1f3f7'/></svg>");
+        }
+
+        @media(max-width:850px) {
+            &::before {
+                height: 84px;
+            }
+        }
+    }
+
+    &__content {
+        margin: $container-margin;
+        padding: $container-padding;
+        position: relative;
+        bottom: 10rem;
+        text-align: center;
+        color: $text-color-darkgray;
+
+        .learn-more__paragraph {
+            font-size: $font-size-l;
+            line-height: 1.5;
+        }
+
+        .learn-more__heading {
+            font-size: $font-size-xxl;
+            text-align: center;
+
+            margin-bottom: 2rem;
+        }
+
+        .learn-more__subheading {
+            font-size: $font-size-xl;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+
+        }
+
+        .learn-more__text {
+            font-size: $font-size-l;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &-intro__button {
+
+        background-color: $background-color-debian;
+        padding: 1rem;
+        color: $text-color-white;
+        text-decoration: none;
+        font-size: $font-size-l;
+        transition: background-color 0.3s ease;
+
+        position: relative;
+        top: 3.5rem;
+
+        font-family: $font-family-main;
+
+        &:hover {
+            background-color: darken($background-color-debian, 10%);
+        }
+
+        &-icon {
+            margin-left: .5rem;
+        }
+    }
+}
