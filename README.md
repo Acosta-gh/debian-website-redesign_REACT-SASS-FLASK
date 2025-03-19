@@ -1,4 +1,4 @@
-# Re-imagined Debian Page
+# Re-imagined Debian Page (En desarrollo)
 
 Este proyecto es una re-imaginación de la página web de Debian, con un diseño más moderno y dinámico. 
 
