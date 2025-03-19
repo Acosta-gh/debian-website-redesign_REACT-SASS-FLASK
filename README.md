@@ -1,4 +1,4 @@
-# Re-imagined Debian Page (En desarrollo)
+![image](https://github.com/user-attachments/assets/ad6a93fb-b928-423f-9d36-c22ac7e93c52)# Pagina Debian Re-Imaginada (En desarrollo)
 
 Este proyecto es una re-imaginación de la página web de Debian, con un diseño más moderno y dinámico. 
 
@@ -21,3 +21,12 @@ Este proyecto se desarrolló para mostrar mis habilidades con tecnologías como 
 - **No tengo afiliación con Debian**, **Elementary OS**, **Zorin OS** ni con ninguna de las empresas mencionadas en este proyecto.
 - La página fue creada para simular cómo podría verse la página de Debian con un estilo más moderno y actualizado, **sin representar oficial ni legalmente a nadie**.
 
+## Imagenes
+
+![image](https://github.com/user-attachments/assets/10457bb0-9714-47da-9eed-625243cca635)
+![image](https://github.com/user-attachments/assets/c7e9d29c-e16c-4b43-acff-3887ab9b9053)
+![image](https://github.com/user-attachments/assets/4b37f4e0-8e61-4e72-98f6-b025616cdfb3)
+![image](https://github.com/user-attachments/assets/53d35ff6-985b-4043-9995-e7a39abc574e)
+![image](https://github.com/user-attachments/assets/db26d11b-3e31-4157-a9d4-be0eb51f851a)
+![image](https://github.com/user-attachments/assets/87671ad8-6108-40f9-b9ef-a6a5a8053b58)
+![image](https://github.com/user-attachments/assets/cc751ced-a0df-4edc-938d-aa450ede648d)
