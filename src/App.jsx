@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import NoPage from "./pages/no-page/NoPage";
 import Home from "./pages/home/Home";
-import Blog from "./pages/Blog";
-import Micronews from "./pages/Micronews";
-import Planet from "./pages/Planet";
+import Blog from "./pages/blog/Blog";
+import Micronews from "./pages/micronews/Micronews";
+import Planet from "./pages/planet/Planet";
 import LearnMore from "./pages/learn-more/LearnMore";
 import { LanguageProvider } from "./contexts/LanguageContext"; 
 
