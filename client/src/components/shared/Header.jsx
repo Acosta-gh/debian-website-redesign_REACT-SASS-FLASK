@@ -67,7 +67,7 @@ function Header() {
             <Link to="learnmore" className="header__nav-item--link">{translations.header.getDebian[language]}</Link>
           </li>
           <li className="header__nav-item">
-            <Link to="news" className="header__nav-item--link">PROJECT NEWS</Link>
+            <Link to="news" className="header__nav-item--link">{translations.header.projectNews[language]}</Link>
           </li>
           <li className="header__nav-item">
             <Link to="donate" className="header__nav-item--link">{translations.header.donate[language]}</Link>

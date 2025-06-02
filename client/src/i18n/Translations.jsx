@@ -6,6 +6,7 @@ export const translations = {
         getDebian: { en: "GET DEBIAN", es: "OBTENER DEBIAN", fr: "OBTENIR DEBIAN", pt: "OBTER DEBIAN", "zh-Hans": "获取 DEBIAN", "zh-Hant": "獲取 DEBIAN" },
         aboutUs: { en: "ABOUT US", es: "SOBRE NOSOTROS", fr: "À PROPOS", pt: "SOBRE NÓS", "zh-Hans": "关于我们", "zh-Hant": "關於我們" },
         events: { en: "EVENTS", es: "EVENTOS", fr: "ÉVÉNEMENTS", pt: "EVENTOS", "zh-Hans": "活动", "zh-Hant": "活動" },
+        projectNews: { en: "PROJECT NEWS", es: "NOTICIAS DEL PROYECTO", fr: "ACTUALITÉS DU PROJET", pt: "NOTÍCIAS DO PROJETO", "zh-Hans": "项目新闻", "zh-Hant": "項目新聞" },
         donate: { en: "DONATE", es: "DONAR", fr: "FAIRE UN DON", pt: "DOAR", "zh-Hans": "捐赠", "zh-Hant": "捐贈" },
         language: { en: "Language", es: "Idioma", fr: "Langue", pt: "Idioma", "zh-Hans": "语言", "zh-Hant": "語言" },
     },
