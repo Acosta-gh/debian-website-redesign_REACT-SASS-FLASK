@@ -1,4 +1,4 @@
-# 🚀 Pagina Debian Re-Imaginada
+# 🚀 Pagina Debian Re-Imaginada (En Desarrollo)
 
 Este proyecto es una re-imaginación de la página web de Debian, con un diseño más moderno y dinámico. 
 
@@ -35,6 +35,6 @@ Este proyecto se desarrolló para mostrar mis habilidades con tecnologías como 
 ![image](https://github.com/user-attachments/assets/cc751ced-a0df-4edc-938d-aa450ede648d)
 
 
-## 🤖 Créditos
-
-Este proyecto fue desarrollado con la ayuda de modelos de lenguaje generativo (LLMs) para acelerar la escritura de código y mejorar la productividad.
+## 📝 Créditos
+### Código:
+- **Large Languge Models (LLM)**: Se utilizaron LLMs como GitHub Copilot y ChatGPT para corregir errores y brindar ayuda en puntos específicos del código.
