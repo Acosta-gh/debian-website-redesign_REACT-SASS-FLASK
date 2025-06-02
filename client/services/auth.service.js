@@ -1,4 +1,4 @@
-const API_URL = 'http://127.0.0.1:5000/user'; // Cambia esto según tu backend
+const API_URL = 'http://127.0.0.1:5000/user'; 
 
 // Guardar el token en localStorage
 const saveToken = (token) => {

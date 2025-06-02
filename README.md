@@ -34,3 +34,7 @@ Este proyecto se desarrolló para mostrar mis habilidades con tecnologías como 
 ![image](https://github.com/user-attachments/assets/87671ad8-6108-40f9-b9ef-a6a5a8053b58)
 ![image](https://github.com/user-attachments/assets/cc751ced-a0df-4edc-938d-aa450ede648d)
 
+
+## 🤖 Créditos
+
+Este proyecto fue desarrollado con la ayuda de modelos de lenguaje generativo (LLMs) para acelerar la escritura de código y mejorar la productividad.
