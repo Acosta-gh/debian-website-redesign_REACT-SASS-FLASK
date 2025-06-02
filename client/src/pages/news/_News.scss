@@ -1,0 +1,47 @@
+.news {
+    color: $text-color-darkgray;
+    font-family: $font-family-main;
+    margin: $container-margin;
+    min-height: 45vh;
+    padding: 1.25% 20% 2% 20%;
+
+    @include respond-to($breakpoint-xxl) {
+        padding: $container-padding;
+    }
+
+    &-title {
+        font-size: $font-size-xxxl;
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &-item {
+        background-color: $background-color-body;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+        h2 {
+            color: $text-color-black;
+            font-size: $font-size-xl;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: $font-size-base;
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    &-date {
+        font-size: $font-size-base;
+        color: $text-color-darkgray;
+        display: block;
+        text-align: right;
+    }
+}

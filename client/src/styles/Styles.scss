@@ -1,0 +1,16 @@
+// styles/ Styles.scss
+
+@import 'Variables';
+@import 'Reset'; 
+
+@import '../components/shared/Header'; 
+@import '../components/shared/Footer'; 
+@import '../components/shared/Newscard'; 
+
+@import '../pages/home/Home'; 
+@import '../pages/no-page/NoPage'; 
+@import '../pages/learn-more/LearnMore';
+@import '../pages/news/News';
+@import '../pages/article/Article';
+@import '../pages/admin-panel/AdminPanel';
+@import '../pages/login/Login';

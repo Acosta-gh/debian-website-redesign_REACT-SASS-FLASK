@@ -1,0 +1,74 @@
+.adminpanel, .adminpanel * {
+  box-sizing: border-box;
+}
+
+.adminpanel {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 50vh;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: #444;
+      }
+
+      input,
+      textarea {
+        padding: 0.6rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        width: 100%;
+        resize: vertical;
+
+        &:focus {
+          outline: none;
+          border-color: $background-color-tertiary-lightmode;
+          box-shadow: 0 0 4px rgba(71, 71, 71, 0.3);
+        }
+      }
+
+      textarea {
+        min-height: 100px;
+      }
+    }
+
+    button {
+      padding: 0.7rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      background-color: $background-color-debian;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: mix(black, $background-color-debian, 15%);
+      }
+    }
+  }
+}
