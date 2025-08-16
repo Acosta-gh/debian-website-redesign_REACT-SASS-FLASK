@@ -190,6 +190,68 @@ export const translations = {
                 "zh-Hant": "最新消息（僅提供英文版）"
             }
         },
+        newsCards: [
+            {
+                id: 1,
+                title: {
+                    en: "Debian 12.10 Released with Major Improvements!",
+                    es: "¡Debian 12.10 llega con grandes mejoras!",
+                    fr: "Debian 12.10 publié avec des améliorations majeures !",
+                    pt: "Debian 12.10 lançado com grandes melhorias!",
+                    "zh-Hans": "Debian 12.10 带来重大改进！",
+                    "zh-Hant": "Debian 12.10 帶來重大改進！"
+                },
+                description: {
+                    en: "This release brings enhanced performance, new tools, and even better security.",
+                    es: "Esta versión trae mayor rendimiento, nuevas herramientas y mejor seguridad.",
+                    fr: "Cette version apporte de meilleures performances, de nouveaux outils et une sécurité renforcée.",
+                    pt: "Esta versão traz desempenho aprimorado, novas ferramentas e mais segurança.",
+                    "zh-Hans": "本次发布带来更强的性能、新工具和更好的安全性。",
+                    "zh-Hant": "本次發佈帶來更強的效能、新工具和更好的安全性。"
+                },
+                created_at: "2025-06-24T10:23:00Z"
+            },
+            {
+                id: 2,
+                title: {
+                    en: "DebConf25: Registration Open!",
+                    es: "DebConf25: ¡Inscripciones abiertas!",
+                    fr: "DebConf25 : Inscriptions ouvertes !",
+                    pt: "DebConf25: Inscrições abertas!",
+                    "zh-Hans": "DebConf25：注册开放！",
+                    "zh-Hant": "DebConf25：註冊開放！"
+                },
+                description: {
+                    en: "Sign up for the largest annual Debian community conference.",
+                    es: "Inscríbete al mayor encuentro anual de la comunidad Debian.",
+                    fr: "Inscrivez-vous à la plus grande conférence annuelle de la communauté Debian.",
+                    pt: "Inscreva-se no maior encontro anual da comunidade Debian.",
+                    "zh-Hans": "报名参加年度最大 Debian 社区大会。",
+                    "zh-Hant": "報名參加年度最大 Debian 社群大會。"
+                },
+                created_at: "2025-07-11T08:00:00Z"
+            },
+            {
+                id: 3,
+                title: {
+                    en: "Official Documentation Improvements",
+                    es: "Mejoras en la documentación oficial",
+                    fr: "Améliorations de la documentation officielle",
+                    pt: "Melhorias na documentação oficial",
+                    "zh-Hans": "官方文档改进",
+                    "zh-Hant": "官方文件改進"
+                },
+                description: {
+                    en: "Contributing and accessing Debian documentation is easier than ever.",
+                    es: "Ahora es más fácil contribuir y acceder a la documentación de Debian.",
+                    fr: "Il est maintenant plus facile de contribuer et d'accéder à la documentation Debian.",
+                    pt: "Agora é mais fácil contribuir e acessar a documentação do Debian.",
+                    "zh-Hans": "现在贡献和访问 Debian 文档比以往更容易。",
+                    "zh-Hant": "現在貢獻和存取 Debian 文件比以往更容易。"
+                },
+                created_at: "2025-05-30T17:45:00Z"
+            }
+        ],
         performanceSection: {
             title_speed: {
                 en: "More Speed",
