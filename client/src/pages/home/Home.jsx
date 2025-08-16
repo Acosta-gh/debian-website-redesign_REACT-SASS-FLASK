@@ -40,6 +40,7 @@ const sponsors = [
 
 const Home = () => {
   const { language } = useLanguage(); //Obtiene el idioma elegido / Gets the chosen language
+  
   const descriptions = translations.homePage.introSection.descriptions[language];
   const backDelay = (language === 'zh-Hans' || language === 'zh-Hant') ? 3500 : 1500;
 
@@ -51,7 +52,6 @@ const Home = () => {
     { src: "/images/image5.webp", alt: "image5" },
     { src: "/images/image6.webp", alt: "image6" },
   ];
-
 
 
   return (

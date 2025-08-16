@@ -250,6 +250,46 @@ export const translations = {
                     "zh-Hant": "現在貢獻和存取 Debian 文件比以往更容易。"
                 },
                 created_at: "2025-05-30T17:45:00Z"
+            },
+            {
+                id: 4,
+                title: {
+                    en: "New Debian Installer: Faster and More Accessible",
+                    es: "Nuevo instalador de Debian: más rápido y accesible",
+                    fr: "Nouveau programme d'installation Debian : plus rapide et plus accessible",
+                    pt: "Novo instalador do Debian: mais rápido e acessível",
+                    "zh-Hans": "全新 Debian 安装器：更快更易用",
+                    "zh-Hant": "全新 Debian 安裝器：更快更易用"
+                },
+                description: {
+                    en: "The latest Debian installer introduces a revamped interface, improved hardware detection, and better accessibility options.",
+                    es: "El nuevo instalador de Debian presenta una interfaz renovada, mejor detección de hardware y más opciones de accesibilidad.",
+                    fr: "Le nouvel installateur Debian propose une interface repensée, une meilleure détection du matériel et des options d’accessibilité améliorées.",
+                    pt: "O novo instalador do Debian apresenta uma interface renovada, melhor detecção de hardware e mais opções de acessibilidade.",
+                    "zh-Hans": "最新 Debian 安装器带来焕然一新的界面、更强的硬件检测和更好的无障碍选项。",
+                    "zh-Hant": "最新 Debian 安裝器帶來煥然一新的介面、更強的硬體偵測和更好的無障礙選項。"
+                },
+                created_at: "2025-04-12T14:20:00Z"
+            },
+            {
+                id: 5,
+                title: {
+                    en: "Debian Now Available on More Architectures",
+                    es: "Debian ahora disponible en más arquitecturas",
+                    fr: "Debian désormais disponible sur plus d'architectures",
+                    pt: "Debian agora disponível em mais arquiteturas",
+                    "zh-Hans": "Debian 现已支持更多架构",
+                    "zh-Hant": "Debian 現已支援更多架構"
+                },
+                description: {
+                    en: "With the latest release, Debian expands support to additional CPU architectures, making it even more versatile for servers and embedded devices.",
+                    es: "Con la última versión, Debian amplía el soporte a más arquitecturas de CPU, haciéndolo aún más versátil para servidores y dispositivos embebidos.",
+                    fr: "Avec la dernière version, Debian étend la prise en charge à d'autres architectures CPU, le rendant encore plus polyvalent pour les serveurs et les appareils embarqués.",
+                    pt: "Com o lançamento mais recente, o Debian amplia o suporte para mais arquiteturas de CPU, tornando-o ainda mais versátil para servidores e dispositivos embarcados.",
+                    "zh-Hans": "最新版 Debian 拓展了对更多 CPU 架构的支持，使其在服务器和嵌入式设备上更加多才多艺。",
+                    "zh-Hant": "最新版 Debian 擴展了對更多 CPU 架構的支援，使其在伺服器和嵌入式裝置上更加多才多藝。"
+                },
+                created_at: "2025-03-05T09:10:00Z"
             }
         ],
         performanceSection: {

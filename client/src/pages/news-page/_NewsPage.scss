@@ -1,0 +1,163 @@
+.news {
+    padding: 2rem 1rem;
+    background: $background-color-body;
+    font-family: $font-family-main;
+
+    &__maintitle {
+        font-size: $font-size-xxxl;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        color: $background-color-debian;
+        font-family: $font-family-secondary;
+        font-weight: $font-weight-bold;
+
+        @include respond-to($breakpoint-lg) {
+            font-size: $font-size-xxxl-mobile;
+            text-align: center;
+            padding: 3.3rem 1rem 0 1rem;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 700px;
+    }
+
+    &__item {
+        background: $text-color-white;
+        border-radius: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 1.5px 4px rgba(0, 0, 0, 0.03);
+        margin-bottom: 2rem;
+        padding: 2rem;
+        transition: box-shadow 0.2s;
+        border-left: 5px solid $background-color-debian;
+
+        &:hover {
+            box-shadow: 0 4px 16px rgba(143, 45, 78, 0.13), 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid darken($background-color-debian, 10%);
+        }
+    }
+
+    &__title {
+        font-size: $font-size-l;
+        color: $background-color-debian;
+        margin-bottom: 0.8rem;
+        font-weight: $font-weight-bold;
+        line-height: 1.2;
+        font-family: $font-family-secondary;
+    }
+
+    &__description {
+        color: $text-color-darkgray;
+        font-size: $font-size-base;
+        margin-bottom: 1.2rem;
+        line-height: 1.6;
+        font-weight: $font-weight-regular;
+        font-family: $font-family-main;
+    }
+
+    &__date {
+        display: block;
+        font-size: $font-size-normal;
+        color: $text-color-gray;
+        text-align: right;
+        margin-top: 1rem;
+        font-family: $font-family-main;
+    }
+
+    // PAGINATION
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        gap: 0.4rem;
+        margin: 1.5rem 0 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__pagination-page,
+    &__pagination-prev,
+    &__pagination-next {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        background: $text-color-white;
+        border-radius: 0.4rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+        font-size: $font-size-base;
+        font-weight: $font-weight-medium;
+        color: $background-color-debian;
+        cursor: pointer;
+        min-width: 2.1rem;
+        min-height: 2.1rem;
+        text-align: center;
+        line-height: 2.1rem;
+        transition: background 0.15s, color 0.15s;
+        margin: 0 0.1rem;
+        border: none;
+        padding: 0;
+        user-select: none;
+
+
+        // Hace que el link sea clickeable en todo el área del botón
+        a.news__pagination-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            z-index: 1;
+        }
+    }
+
+    &__pagination-page--active {
+        background: $background-color-debian;
+        color: $text-color-white;
+        font-weight: $font-weight-bold;
+
+        a.news__pagination-link {
+            color: $text-color-white;
+        }
+    }
+
+    &__pagination--disabled {
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    // Responsive
+    @include respond-to($breakpoint-md) {
+        padding: 1rem 0.3rem;
+
+        &__item {
+            padding: 1.2rem;
+        }
+
+        &__title {
+            font-size: $font-size-l-mobile;
+        }
+
+        &__description {
+            font-size: $font-size-base-mobile;
+        }
+
+        &__date {
+            font-size: $font-size-normal-mobile;
+        }
+
+        &__pagination-page,
+        &__pagination-prev,
+        &__pagination-next {
+            font-size: $font-size-base-mobile;
+            min-width: 1.7rem;
+            min-height: 1.7rem;
+            line-height: 1.7rem;
+        }
+    }
+}
